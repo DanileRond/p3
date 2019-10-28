@@ -46,7 +46,8 @@ int main(int argc, const char *argv[]) {
 
 	std::string input_wav = args["<input-wav>"].asString();
 	std::string output_txt = args["<output-txt>"].asString();
-
+/// \HECHO
+/// provem el to do LIST
   // Read input sound file
   unsigned int rate;
   vector<float> x;
