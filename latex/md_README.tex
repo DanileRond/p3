@@ -1,0 +1,75 @@
+Para descargar los ficheros de esta práctica, debe ir a la página principal del repositorio Git\+Hub, \href{https://github.com/albino-pav/P3}{\tt práctica 3}, y clickar en la caja verde situada a la derecha, justo encima del listado de ficheros del repositorio, con el nombre $\ast$$\ast${\ttfamily Clone or download}$\ast$$\ast$. Al hacerlo, se despliega un menú en el que aparece la dirección del repositorio. Copie esta dirección en el portapapeles (puede usar la rata y {\bfseries \mbox{[}Ctrl-\/C\mbox{]}} o usar el icono a la derecha de la dirección). A continuación, vaya al directorio {\bfseries P\+AV} de su ordenador y ejecute la orden siguiente\+:
+
+
+\begin{DoxyCode}
+usuario:~/PAV$ git clone dirección\_copiada
+\end{DoxyCode}
+
+
+Si todo ha funcionado correctamente, el repositorio se descargará en su ordenador y estará preparado para trabajar en él.
+
+\paragraph*{Creación de una rama ({\itshape branch}).}
+
+Lo primero que debe hacer es crear una rama nueva en su repositorio, ya que Git\+Hub no le permitirá actualizar la rama principal ({\bfseries master}) del proyecto. Utilice un nombre que le identifique personalmente (una posible elección es su nombre y apellido). Si, como se recomienda, va a trabajar colaborativamente en el seno de su grupo de prácticas, es conveniente que uno de sus miembros escoja como nombre de la rama la combinación de los primeros apellidos de los integrantes del grupo.
+
+
+\begin{DoxyCode}
+usuario:~/PAV/P3$ git branch Fulano-Mengano
+\end{DoxyCode}
+
+
+\paragraph*{Inicialización del trabajo colaborativo usando Git\+Hub.}
+
+Seguramente sea un buen momento para crear un repositorio con su copia del proyecto en {\bfseries Git\+Hub}. De este modo, los distintos miembros del grupo podrán realizar sus cambios localmente y compartir sus avances en un sitio común y accesible.
+
+Para ello, lo primero que debe hacer es, si no dispone de ella, crear una cuenta en Git\+Hub. El proceso para ello es bastante sencillo siguiendo las instrucciones proporciondas por el proio Git\+Hub. Al contrario que Git, Git\+Hub se gestiona completamente desde un entorno gráfico súmamente intuitivo. Además, está razonablemente documentado, tanto internamente, mediante sus \href{https://guides.github.com/}{\tt Guías de Git\+Hub}, como externamente, mediante multitud de tutoriales, guías y vídeos disponibles gratuitamente en internet.
+
+Cree un repositorio vacío en su nueva cuenta de Git\+Hub (aunque no es estrictamente necesario, use el mismo nombre que la práctica\+: {\bfseries P3}). Obtenga la dirección de su nuevo repositorio vacío, y declárelo como origen remoto de su repositorio local\+:
+
+
+\begin{DoxyCode}
+usuario:~/PAV/P3$ git remote add origin dirección-repositorio-vacío
+\end{DoxyCode}
+
+
+A continuación, ya puede sincronizar su repositorio remoto con su copia local con la orden\+:
+
+
+\begin{DoxyCode}
+usuario:~/PAV/P3$ git push origin master
+\end{DoxyCode}
+
+
+\subsection*{Entrega de la práctica.}
+
+La entrega de la práctica se hará mediante {\itshape pull requests}. Conforme se acerque la fecha de entrega, prevista para alrededor del 3 de noviembre de 2019, se informará del procedimiento con mayor detalle.
+
+\subsection*{Acerca de este fichero, R\+E\+A\+D\+M\+E.\+md, y del lenguaje en que está escrito, Markdown.}
+
+R\+E\+A\+D\+M\+E.\+md es un fichero de texto escrito con un formato denominado {\itshape {\bfseries markdown}}. La principal característica de este formato es que, manteniendo la legibilidad cuando se visualiza con herramientas en modo texto ({\ttfamily more}, {\ttfamily less}, editores varios, ...), permite amplias posibilidades de visualización con formato en una amplia gama de aplicaciones; muy notablemente, {\bfseries Git\+Hub}, {\bfseries Doxygen} y {\bfseries Facebook} (ciertamente, \+:eyes\+:).
+
+Por ejemplo, {\itshape markdown} permite construir tablas como la siguiente, que muestra distintas opciones de resalte del texto\+:
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ modo texto }&\PBS\centering \textbf{ modo gráfico }&\textbf{ modo texto }&\PBS\centering \textbf{ modo gráfico  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ modo texto }&\PBS\centering \textbf{ modo gráfico }&\textbf{ modo texto }&\PBS\centering \textbf{ modo gráfico  }\\\cline{1-4}
+\endhead
+{\ttfamily $\ast$cursiva$\ast$} &\PBS\centering $\ast$cursiva$\ast$ &{\ttfamily \+\_\+cursiva\+\_\+} &\PBS\centering \+\_\+cursiva\+\_\+ \\\cline{1-4}
+{\ttfamily $\ast$$\ast$negrita$\ast$$\ast$} &\PBS\centering $\ast$$\ast$negrita$\ast$$\ast$ &{\ttfamily \+\_\+\+\_\+negrita\+\_\+\+\_\+} &\PBS\centering \+\_\+\+\_\+negrita\+\_\+\+\_\+ \\\cline{1-4}
+{\ttfamily $\ast$$\ast$$\ast$cursiva y negrita$\ast$$\ast$$\ast$}&\PBS\centering $\ast$$\ast$$\ast$cursiva y negrita$\ast$$\ast$$\ast$&{\ttfamily \+\_\+\+\_\+\+\_\+negrita y cursiva\+\_\+\+\_\+\+\_\+} &\PBS\centering \+\_\+\+\_\+\+\_\+negrita y cursiva\+\_\+\+\_\+\+\_\+ \\\cline{1-4}
+{\ttfamily \+\_\+$\ast$$\ast$negrita y cursiva$\ast$$\ast$\+\_\+}&\PBS\centering \+\_\+\+\_\+$\ast$negrita y cursiva$\ast$\+\_\+\+\_\+&{\ttfamily \+\_\+\+\_\+$\ast$cursiva y negrita$\ast$\+\_\+\+\_\+}&\PBS\centering \+\_\+$\ast$$\ast$cursiva y negrita$\ast$$\ast$\+\_\+ \\\cline{1-4}
+\end{longtabu}
+
+\begin{DoxyItemize}
+\item N\+O\+TA\+: {\bfseries Doxygen} no muestra correctamente el texto con formato de la tabla anterior. Sin embargo, otros programas, en particular, {\bfseries Git\+Hub}, sí lo hacen.
+\end{DoxyItemize}
+
+También permite los links, como el siguiente, que permite acceder a los elementos más importantes de la sintaxis de este formato desde la página de su creador, {\itshape John Gruber}\+: \href{https://daringfireball.net/projects/markdown/syntax}{\tt Sintaxis de Markdown}.
+
+Algunas aplicaciones añaden ampliaciones específicas al lenguaje, los llamados {\itshape flavours} (aromas). Esto es, a la vez, una ventaja y un inconveniente, ya que, aunque muchas de ellas son realmente útiles, rompen la unidad del lenguaje e introducen incompatibilidades. Ahora bien, como todos ellos mantienen como referencia la legibilidad del fichero original en modo texto, las incompatibilidades no suelen traducirse en situaciones demasiado desastrosas. Entre los flavours más importantes para nosotros cabe destacar el \href{https://guides.github.com/features/mastering-markdown/}{\tt Markdown de Git\+Hub} o el \href{http://www.doxygen.nl/manual/markdown.html}{\tt Markdown de Doxygen}. 

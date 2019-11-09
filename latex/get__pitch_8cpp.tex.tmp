@@ -1,0 +1,41 @@
+\hypertarget{get__pitch_8cpp}{}\section{src/get\+\_\+pitch/get\+\_\+pitch.cpp File Reference}
+\label{get__pitch_8cpp}\index{src/get\+\_\+pitch/get\+\_\+pitch.\+cpp@{src/get\+\_\+pitch/get\+\_\+pitch.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}wavfile\+\_\+mono.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pitch\+\_\+analyzer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}docopt.\+h\char`\"{}}\newline
+Include dependency graph for get\+\_\+pitch.\+cpp\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{get__pitch_8cpp_a7d356b7d5a77c1e2fb7e8154f65ebfcf}\label{get__pitch_8cpp_a7d356b7d5a77c1e2fb7e8154f65ebfcf}} 
+\#define {\bfseries F\+R\+A\+M\+E\+\_\+\+L\+EN}~0.\+030 /$\ast$ 30 ms. $\ast$/
+\item 
+\mbox{\Hypertarget{get__pitch_8cpp_a69ba23fac7d991d8e893ea34ef05ba00}\label{get__pitch_8cpp_a69ba23fac7d991d8e893ea34ef05ba00}} 
+\#define {\bfseries F\+R\+A\+M\+E\+\_\+\+S\+H\+I\+FT}~0.\+015 /$\ast$ 15 ms. $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{get__pitch_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{get__pitch_8cpp_ac0f2228420376f4db7e1274f2b41667c}\label{get__pitch_8cpp_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{get\+\_\+pitch.\+cpp@{get\+\_\+pitch.\+cpp}!main@{main}}
+\index{main@{main}!get\+\_\+pitch.\+cpp@{get\+\_\+pitch.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Modify the program syntax and the call to {\bfseries docopt()} in order to add options and arguments to the program.
+
+provem el to do L\+I\+ST
+
+Preprocess the input signal in order to ease pitch estimation. For instance, central-\/clipping or low pass filtering may be used.
+
+Postprocess the estimation in order to supress errors. For instance, a median filter or time-\/warping may be used. 

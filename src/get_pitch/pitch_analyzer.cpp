@@ -9,9 +9,25 @@ using namespace std;
 /// Name space of UPC
 namespace upc {
   void PitchAnalyzer::autocorrelation(const vector<float> &x, vector<float> &r) const {
+         double mx = 0;  
+       // Calculamos la media de la serie x[] 
+        for (unsigned int i = 0; i < x.size(); i++){
+ 
+          mx += x[i];
+ 
+        }
+ 
+      mx = mx / x.size();
 
     for (unsigned int l = 0; l < r.size(); ++l) {
-  		/// \TODO Compute the autocorrelation r[l]
+  		/// \HECHO Compute the autocorrelation r[l]
+          for(unsigned int k = l; k < x.size(); ++k){
+            r[l] = 0;
+
+        r[l] = r[l] + (x[k])*(x[k-l]);
+
+        }
+        r[l] = r[l]/r.size();
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
@@ -26,7 +42,11 @@ namespace upc {
 
     switch (win_type) {
     case HAMMING:
-      /// \TODO Implement the Hamming window
+      /// \HECHO Implement the Hamming window
+        for(unsigned int i = 0; i < frameLen; i++){
+        window[i] = 25/46 -  (1-25/46) * cos(2 * i * M_PI/(frameLen));
+        }
+
       break;
     case RECT:
     default:
@@ -47,10 +67,12 @@ namespace upc {
   }
 
   bool PitchAnalyzer::unvoiced(float pot, float r1norm, float rmaxnorm) const {
-    /// \TODO Implement a rule to decide whether the sound is voiced or not.
+    /// \HECHO Implement a rule to decide whether the sound is voiced or not.
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
-    return false;
+    if(r1norm < 0.85  || rmaxnorm < 0.25 ){
+      return true;}
+    else return false;
   }
 
   float PitchAnalyzer::compute_pitch(vector<float> & x) const {
@@ -66,9 +88,16 @@ namespace upc {
     //Compute correlation
     autocorrelation(x, r);
 
-    vector<float>::const_iterator iR = r.begin(), iRMax = iR;
+    vector<float>::const_iterator iR = r.begin(), iRMax = iR , iRref;
 
-    /// \TODO 
+    for(iRref = iR + npitch_min; iRref < iR + npitch_max; iRref++) {
+        if(*iRref > *iRMax) {
+          iRMax = iRref;
+        }
+     }
+
+
+    /// \HECHO 
 	/// Find the lag of the maximum value of the autocorrelation away from the origin.<br>
 	/// Choices to set the minimum value of the lag are:
 	///    - The first negative value of the autocorrelation.
