@@ -4,7 +4,7 @@
 GETF0=get_pitch
 PITCH_DB=pitch_db
 
-for fwav in $PITCH_DB/train/*.wav; do
+for fwav in $PITCH_DB/train2/*.wav; do
     echo "$fwav ----"
     ff0=${fwav/.wav/.f0}
     $GETF0 $fwav $ff0 > /dev/null || (echo "Error in $GETF0 $fwav $ff0"; exit 1)

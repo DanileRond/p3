@@ -1,6 +1,6 @@
-Build started at 2019-11-04T19:56:51.389438
+Build started at 2019-11-09T23:15:12.660963
 Main binary: /usr/bin/python3
-Build Options: 
+Build Options: -Dbackend=ninja
 Python system: Linux
 The Meson build system
 Version: 0.52.0
@@ -9,34 +9,8 @@ Build dir: /home/daniel/Documentos/P3pav/p3/bin
 Build type: native build
 Project name: Práctica 3 de PAV - detección de pitch
 Project version: v2.0
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.cc -o /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.exe
 C++ compiler for the build machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the build machine: GNU ld.bfd 2.30
-No CXXFLAGS in the environment, not changing global flags.
-No LDFLAGS in the environment, not changing global flags.
-No CPPFLAGS in the environment, not changing global flags.
-Sanity testing C++ compiler: c++
-Is cross compiler: False.
-Sanity check compiler command line: c++ /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.cc -o /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/daniel/Documentos/P3pav/p3/bin/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 C++ linker for the host machine: GNU ld.bfd 2.30
 Build machine cpu family: x86_64
@@ -50,8 +24,8 @@ Configuring Doxyfile using configuration
 Build targets in project: 4
 Found ninja-1.8.2 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmp9xtupeth
-Command line:  c++ /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmp9xtupeth/testfile.cpp -o /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmp9xtupeth/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmpasygs5vt
+Command line:  c++ /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmpasygs5vt/testfile.cpp -o /home/daniel/Documentos/P3pav/p3/bin/meson-private/tmpasygs5vt/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
