@@ -1,0 +1,8 @@
+<map id="docopt::BranchPattern" name="docopt::BranchPattern">
+<area shape="rect" id="node3" href="$classdocopt_1_1Either.html" title="docopt::Either" alt="" coords="5,155,108,181"/>
+<area shape="rect" id="node4" href="$classdocopt_1_1OneOrMore.html" title="docopt::OneOrMore" alt="" coords="133,155,269,181"/>
+<area shape="rect" id="node5" href="$classdocopt_1_1Optional.html" title="docopt::Optional" alt="" coords="293,155,410,181"/>
+<area shape="rect" id="node7" href="$classdocopt_1_1Required.html" title="docopt::Required" alt="" coords="435,155,556,181"/>
+<area shape="rect" id="node2" href="$classdocopt_1_1Pattern.html" title="docopt::Pattern" alt="" coords="220,5,331,32"/>
+<area shape="rect" id="node6" href="$classdocopt_1_1OptionsShortcut.html" title="docopt::OptionsShortcut" alt="" coords="270,229,433,256"/>
+</map>

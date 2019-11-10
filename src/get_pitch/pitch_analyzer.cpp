@@ -32,7 +32,7 @@ namespace upc {
       return;
 
     window.resize(frameLen);
-double c = 25/46;
+double c = 0.53836;
     switch (win_type) {
     case HAMMING:
       /// \HECHO Implement the Hamming window

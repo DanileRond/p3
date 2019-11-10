@@ -1,0 +1,12 @@
+<map id="docopt::Pattern" name="docopt::Pattern">
+<area shape="rect" id="node2" href="$classdocopt_1_1BranchPattern.html" title="docopt::BranchPattern" alt="" coords="164,107,316,133"/>
+<area shape="rect" id="node8" href="$classdocopt_1_1LeafPattern.html" title="docopt::LeafPattern" alt="" coords="172,208,308,235"/>
+<area shape="rect" id="node3" href="$classdocopt_1_1Either.html" title="docopt::Either" alt="" coords="381,5,483,32"/>
+<area shape="rect" id="node4" href="$classdocopt_1_1OneOrMore.html" title="docopt::OneOrMore" alt="" coords="364,56,500,83"/>
+<area shape="rect" id="node5" href="$classdocopt_1_1Optional.html" title="docopt::Optional" alt="" coords="373,107,491,133"/>
+<area shape="rect" id="node7" href="$classdocopt_1_1Required.html" title="docopt::Required" alt="" coords="371,157,493,184"/>
+<area shape="rect" id="node6" href="$classdocopt_1_1OptionsShortcut.html" title="docopt::OptionsShortcut" alt="" coords="548,107,711,133"/>
+<area shape="rect" id="node9" href="$classdocopt_1_1Argument.html" title="docopt::Argument" alt="" coords="369,208,495,235"/>
+<area shape="rect" id="node11" href="$classdocopt_1_1Option.html" title="docopt::Option" alt="" coords="379,259,485,285"/>
+<area shape="rect" id="node10" href="$classdocopt_1_1Command.html" title="docopt::Command" alt="" coords="565,208,694,235"/>
+</map>

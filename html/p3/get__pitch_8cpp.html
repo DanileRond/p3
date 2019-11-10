@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('get__pitch_8cpp.html','');});
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="wavfile__mono_8h_source.html">wavfile_mono.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pitch__analyzer_8h_source.html">pitch_analyzer.h</a>&quot;</code><br />
 <code>#include &quot;docopt.h&quot;</code><br />
@@ -109,8 +110,8 @@ Include dependency graph for get_pitch.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="get__pitch_8cpp__incl.png" border="0" usemap="#_2home_2daniel_2Documentos_2P3pav_2p3_2src_2get__pitch_2get__pitch_8cpp" alt=""/></div>
 <map name="_2home_2daniel_2Documentos_2P3pav_2p3_2src_2get__pitch_2get__pitch_8cpp" id="_2home_2daniel_2Documentos_2P3pav_2p3_2src_2get__pitch_2get__pitch_8cpp">
-<area shape="rect" id="node6" href="wavfile__mono_8h.html" title="wavfile_mono.h" alt="" coords="369,109,482,136"/>
-<area shape="rect" id="node9" href="pitch__analyzer_8h.html" title="pitch_analyzer.h" alt="" coords="507,109,624,136"/>
+<area shape="rect" id="node7" href="wavfile__mono_8h.html" title="wavfile_mono.h" alt="" coords="455,109,569,136"/>
+<area shape="rect" id="node10" href="pitch__analyzer_8h.html" title="pitch_analyzer.h" alt="" coords="593,109,711,136"/>
 </map>
 </div>
 </div>
@@ -200,8 +201,9 @@ Variables</h2></td></tr>
  Modify the program syntax and the call to <b>docopt()</b> in order to add options and arguments to the program. </dd></dl>
 <dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000002">TODO:</a></b></dt><dd><b>[HECHO]:</b><br />
  provem el to do LIST </dd></dl>
-<dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000003">TODO:</a></b></dt><dd><b>[TODO]:</b><br />
+<dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000003">TODO:</a></b></dt><dd><b>[HECHO]:</b><br />
  Preprocess the input signal in order to ease pitch estimation. For instance, central-clipping or low pass filtering may be used. </dd></dl>
+<p>Center Clipping</p>
 <dl class="TODO"><dt><b><a class="el" href="TODO.html#_TODO000004">TODO:</a></b></dt><dd><b>[TODO]:</b><br />
  Postprocess the estimation in order to supress errors. For instance, a median filter or time-warping may be used. </dd></dl>
 
